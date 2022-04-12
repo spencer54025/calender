@@ -8,14 +8,106 @@ body {
 }
 
 .page-container {
+    background-color: rgb(0, 165, 220);
+    color: palevioletred;
     min-height: 100vh;
-    min-width: 95vw;
+    min-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.page-container > .day-of-the-week-wrapper {
-    flex-direction: row;
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    height: 3rem;
+    color: rgb(198, 105, 136);
+}
+
+.month-name {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.day-of-the-week-wrapper {
+    border: 2px solid rebeccapurple;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows:3em 1fr;
+    width: 70vw;
+    gap: 1px;
+    background-color: darkturquoise;
+}
+
+.day-weekends {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.days {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.45em;
+    border: 1.5px solid rebeccapurple;
+    border-radius: 2px;
+    background-color: deepskyblue;
+}
+
+.dates-wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: .5px;
+}
+
+.date-squares {
+    height: 8rem;
+    position: relative;
+    border: .5px solid rebeccapurple;
+    border-radius: 2px;
+}
+
+.overflow {
+    background-color: rgb(0, 195, 199);
+    color: gray;
+}
+
+.date {
+    font-size: 1.4rem;
+    width: 20%;
+    height: 73%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    background-color: inherit;
+    border: none;
+    height: 80%;
+    width: 100%;
+    resize: none;
+    position: absolute;
+    bottom: 0;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.footer-wrapper {
+    font-size: 3rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
 }
